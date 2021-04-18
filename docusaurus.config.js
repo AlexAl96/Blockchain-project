@@ -1,31 +1,32 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  title: 'PEER-Project',
+  tagline: 'Documentation of the PEER-Project',
+  url: 'https://blockchain-project-kit.netlify.app',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'AlexAl96', // Usually your GitHub org/user name.
+  projectName: 'Blockchain-project', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'PEER-Project',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs/aim',
           activeBasePath: 'docs',
           label: 'Docs',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
+        //{to: 'blog', label: 'Blog', position: 'left'},
+       // {to: 'help', label: 'Help', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://git.scc.kit.edu/undys/angular-peer',
           label: 'GitHub',
           position: 'right',
         },
@@ -37,44 +38,42 @@ module.exports = {
         {
           title: 'Docs',
           items: [
+
+            {
+              label: 'Overview',
+              to: 'docs/aim',
+            },
             {
               label: 'Getting Started',
-              to: 'docs/',
+              to: 'docs/getting-started',
+            },
+            {
+              label: 'Frontend',
+              to: 'docs/frontend',
+            },
+            {
+              label: 'Blockchain',
+              to: 'docs/smart-contracts',
+            },
+            {
+              label: 'Further Information',
+              to: 'docs/information',
             },
           ],
         },
-        {
-          title: 'Community',
-          items: [
-            {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-            },
-            {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
-            },
-            {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
-          ],
-        },
+
         {
           title: 'More',
           items: [
-            {
-              label: 'Blog',
-              to: 'blog',
-            },
+
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://git.scc.kit.edu/undys/angular-peer',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} PEER-Project, Inc. KIT. All rights belong to Alexander Albert, Maximilian Bonkosch and Marco Spraul.`,
     },
   },
   presets: [
@@ -85,14 +84,9 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+              'https://git.scc.kit.edu/undys/angular-peer',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
+
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },

@@ -1,5 +1,5 @@
 ---
-title: Create a Blog Post
+title: Create a Blog Post / Hello
 ---
 
 This page will help you on how to create blog posts in Docusaurus.

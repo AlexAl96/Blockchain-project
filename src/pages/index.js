@@ -8,32 +8,33 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'The PEER-Platform',
+    imageUrl: 'img/platform.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          The platform was developed to provide students and researchers
+          with a platform in which they can publish their publications and have them evaluated by their examinera based on a blockchain technology.
+
+
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Documentation',
+    imageUrl: 'img/docu.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+          Here you can find all information on the use of the platform as well as all source codes of the developed smart contracts. In addition, the exact procedure is to be documented and problems that have arisen and their solutions dealt with.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Need Help',
+    imageUrl: 'img/mail.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+          Do you have any questions regarding the project or its use?
+          You are welcome to contact us at uneqb@student.kit.edu.
       </>
     ),
   },
@@ -59,7 +60,7 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`PEER-Project Documentation`}
       description="Description will go into a meta tag in <head />">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
